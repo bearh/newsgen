@@ -1,0 +1,30 @@
+Newsgen
+=======
+
+btw, still working on this. Doesn't actually work yet ;p
+
+About
+-----
+* RSS/Atom reader/feed thing.
+* Written in Ruby.
+* Produces pages based on what is in ./page_layout.rb
+* This is not meant to be a overly complex thing.
+* Can block keywords from article titles!
+
+Structure 
+---------
+Right now(prone to change):
+
+scheduler.rb :: Gather feeds, builds sqlite db.
+setup.rb :: sets up everything. I.e create db for everything else to use.
+cache/ :: where pages get stored.
+config.rb :: Configure stuff here.
+page_layout.rb :: how your pages are layed out. Read file to understand how.
+page_build.rb :: Builds the pages acording to your settings.
+
+
+Setup
+-----
+* Add the scheduler to your users crontab. make it run every 10-15 mins, more if you have feeds that don't update very often.
+* Chmod +x the code. chmod +x ./*.rb
+* Enjoy your feeds.
