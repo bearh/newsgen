@@ -1,5 +1,5 @@
 ########## Config ##########
-# Apparently globals are "bad practice".. meh ;p
+# Apparently globals are "bad practice"..
 
 # Sqlite db settings.
 $sqlite_db_name = "./newsgen.db"
